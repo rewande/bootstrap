@@ -188,6 +188,8 @@ const onDOMContentLoaded = callback => {
 
 const isRTL = document.documentElement.dir === 'rtl'
 
+const isTouchEnabledDevice = 'ontouchstart' in document.documentElement
+
 export {
   TRANSITION_END,
   getUID,
@@ -204,5 +206,6 @@ export {
   reflow,
   getjQuery,
   onDOMContentLoaded,
-  isRTL
+  isRTL,
+  isTouchEnabledDevice
 }
